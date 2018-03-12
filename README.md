@@ -21,11 +21,11 @@
     - From your CloudTrail Dashboard, click **View Trails**
     - Next click **Create Trail**  
     - Choose a Trail name. it's irrelevant to this code, but choose something you'll recognize. e.g. *ruby-cloudtrail-slack* 
-    - Under *Create Trail*, select ~**Yes**~ for **Apply trail to all regions**  
-    - Under the trail **Management events**, choose ~**Write-only**~ for the **Read/Write events** option  
+    - Under *Create Trail*, select **_Yes_** for **Apply trail to all regions**  
+    - Under the trail **Management events**, choose **_Write-only_** for the **Read/Write events** option  
     - For specific (or all) S3 buckets and/or Lambda data events, I **do not** select to monitor these. I **do not** choose **select all S3 buckets in your account**. You can select
     buckets/lambdas if you wish, just ensure you aren't setting yourself up for an overload of messages for every S3 read/write, etc. These messages (data events) have not yet been tested.  
-    - Under **Storage location** choose ~**Yes**~ for **Create a new S3 bucket**. Again, name it whatever you please, but something you'll recognize. e.g. *ruby-cloudtrail-slack*
+    - Under **Storage location** choose **_Yes_** for **Create a new S3 bucket**. Again, name it whatever you please, but something you'll recognize. e.g. *ruby-cloudtrail-slack*
     
     - The trail should be configured to monitor **write changes** only, this is how the codebase was tested 
       - In summary, what you're basically doing is having the CloudTrail console dashboard start populating itself with data events. These events are what the API calls from this code can see, parse, format, and send to Slack.
