@@ -1,7 +1,7 @@
 
 # ruby-cloudtrail-slack v1.0.0 [2017-07]
 
-   Looks up and pushes to [Slack][2] the API activity events captured by [AWS CloudTrail][2] that *create*, *update*, or *delete*
+   Looks up and pushes to [Slack][1] the API activity events captured by [AWS CloudTrail][2] that *create*, *update*, or *delete*
    resources in your account. Events for a [region][3] can be looked up for the times in which you had CloudTrail
    turned on in that region during the last seven days.  
    **It takes ~10 minutes for *CloudTrail* to populate events that occur, so expect a ~10 minute delay from the
