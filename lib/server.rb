@@ -86,12 +86,12 @@ class Server
     until quit do # [1] infinite loop until kill -QUIT
 
       # MODIFY VARIABLES - [START HERE]
-      email_from       = 'ruby-cloudtrail-slack@local.host'
-      email_to         = 'your_team+ruby-cloudtrail-slack@your_domain.com'
-      to_name          = 'AWS Monitoring Team'
-      mail_server      = 'mail.host'
+      email_from       = 'ruby-cloudtrail-slack@internal' # Change accordingly
+      email_to         = 'your_team+ruby-cloudtrail-slack@change_me.com' # Change accordingly
+      to_name          = 'AWS Monitoring Team' # Change accordingly
+      mail_server      = 'mail.host' # Change to your internal mx address
       webhook_url      = 'https://hooks.slack.com/services/XXX/XXX/XXX'
-      channel          = 'ruby-cloudtrail-slack'
+      channel          = 'aws-cloudtrail' # Private channels do not include a "#"
       # MODIFY VARIABLES - [STOP HERE], unless you know what you're doing
 
       # Updated as of July 2017
