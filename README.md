@@ -100,7 +100,7 @@
 ##
 
 Author :: Cody Tubbs :: (codytubbs+rcs@gmail.com)  
-[https://github.com/codytubbs/ruby-cloudtrail-slack][98]
+[https://github.com/codytubbs/ruby-cloudtrail-slack][98]  
 [https://github.com/codytubbs][99]
 
 
